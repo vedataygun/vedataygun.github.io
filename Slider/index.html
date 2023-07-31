@@ -1,0 +1,72 @@
+<!Doctype html>
+    <head>
+        <link href="index.css" rel="stylesheet">
+        <meta name="viewport" content="width=device-width , initial-scale=1">
+    </head>
+    <body>
+        <div class="slider">
+            <div class="image-container featured">
+                <div class="description-container">
+                <div class="description">
+                    <span>Turkey</span>
+                    <p>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece</p>
+                </div>
+            </div>
+                <img  src="pexels-şinasi-müldür-2048865.jpg" alt="">
+            </div>
+            <div class="image-container">
+                <div class="description-container">
+                <div class="description">
+                    <span>Moscow</span>
+                    <p>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece</p>
+                </div>
+            </div>
+            <img src="pexels-pixabay-417430.jpg" alt="">
+            </div>
+            <div class="image-container">
+                <div class="description-container">
+                <div class="description">
+                    <span>Azerbaijan</span>
+                    <p>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece</p>
+                </div>
+            </div>
+            <img src="pexels-moe-2927001.jpg" alt="">
+            </div>
+            <div class="image-container">
+                <div class="description-container">
+                <div class="description">
+                    <span>London</span>
+                    <p>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece</p>
+                </div>
+            </div>
+            <img src="pexels-brett-jordan-11495948.jpg" alt="">
+            </div>
+            <div class="image-container">
+                <div class="description-container">
+                <div class="description">
+                    <span>Eiffel</span>
+                    <p>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece It has roots teg</p>
+                </div>
+            </div>
+            <img src="pexels-louis-1530259.jpg" alt="">
+            </div>
+        </div>
+
+    </body>
+    <script>
+        let imgList = document.querySelectorAll(".slider .image-container");
+
+       for(let i =0; i<imgList.length; i++){
+            imgList[i].addEventListener("click",sliderChange)
+       }
+    
+       function sliderChange(){
+        imgList.forEach(e=>{
+                e.classList.remove("featured");
+        });
+        this.classList.add("featured");
+       }
+        
+
+    </script>
+</html>
